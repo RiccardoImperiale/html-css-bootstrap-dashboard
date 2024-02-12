@@ -2,10 +2,12 @@
     --dash-dark: #051e34;
     --dash-warning: #ff8f00;
     --dash-primary-dark: #165bba;
+    --dash-warning-code: #f26551;
 }
 
 body {
     font-family: "Roboto", sans-serif;
+    white-space: nowrap;
 }
 
 
@@ -22,18 +24,18 @@ body {
 
             .bottom {
 
-                .left,
+                /* .left,
                 .right {
                     height: calc(100vh - 125px - 57px);
-                }
+                } */
 
-                .left {
+                /* .left {
                     background-color: rgba(0, 255, 157, 0.448);
                 }
 
                 .right {
                     background-color: rgba(0, 98, 61, 0.448);
-                }
+                } */
             }
         }
     }
@@ -50,7 +52,7 @@ body {
 
 nav {
     .fa-bell {
-        color: #ff8f00;
+        color: var(--dash-warning);
     }
 }
 
@@ -58,9 +60,38 @@ nav {
     background-color: var(--dash-primary-dark);
 }
 
+.card {
+    .fa-code {
+        background-color: var(--dash-warning-code);
+        color: white;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    .btn {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+
+
+}
+
+thead {
+    width: 100%;
+}
 
 
 aside {
     background-color: var(--dash-dark);
     background-image: url('../img/sidebar-bg.png');
 }
+
+/* @media screen and (min-width: 300px) {
+    .prova {
+        display: none;
+    }
+} */
