@@ -4,6 +4,10 @@
     --dash-primary-dark: #165bba;
 }
 
+body {
+    font-family: "Roboto", sans-serif;
+}
+
 
 .debug {
     & main {
@@ -38,6 +42,10 @@
 
 .text-xs {
     font-size: .8rem;
+}
+
+.text-sm {
+    font-size: .9rem;
 }
 
 nav {
