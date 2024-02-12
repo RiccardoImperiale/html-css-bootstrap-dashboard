@@ -29,7 +29,7 @@ nav {
 }
 
 main {
-    height: calc(100vh - 57px);
+    height: calc(100vh - 56px);
     overflow-y: scroll;
 }
 
@@ -63,5 +63,7 @@ aside {
         height: 30px;
         line-height: 30px;
     }
+
+
 }
 
