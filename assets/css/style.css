@@ -19,7 +19,6 @@
 
 body {
     font-family: "Roboto", sans-serif;
-    white-space: nowrap;
 }
 
 
@@ -40,6 +39,11 @@ aside {
 }
 
 .card {
+
+    & table {
+        white-space: nowrap;
+    }
+
     .fa-code {
         background-color: var(--dash-warning-code);
         color: white;
@@ -56,7 +60,3 @@ aside {
         line-height: 30px;
     }
 }
-
-
-
-
