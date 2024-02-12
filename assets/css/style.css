@@ -1,6 +1,7 @@
 :root {
     --dash-dark: #051e34;
     --dash-warning: #ff8f00;
+    --dash-primary-dark: #165bba;
 }
 
 
@@ -11,11 +12,12 @@
             height: calc(100vh - 57px);
             width: 100%;
 
-            .top {
+            /* .top {
                 height: 125px;
-            }
+            } */
 
             .bottom {
+
                 .left,
                 .right {
                     height: calc(100vh - 125px - 57px);
@@ -44,10 +46,13 @@ nav {
     }
 }
 
+.badge {
+    background-color: var(--dash-primary-dark);
+}
+
 
 
 aside {
     background-color: var(--dash-dark);
     background-image: url('../img/sidebar-bg.png');
 }
-

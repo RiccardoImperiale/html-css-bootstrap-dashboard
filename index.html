@@ -24,12 +24,12 @@
                     <img class="d-none d-md-block" src="./assets/img/logo.svg" alt="logo boolean">
                     <img class="d-block d-md-none" src="./assets/img/logo-mobile.png" alt="logo boolean">
                 </a>
-
+                <!-- input search -->
                 <form class="d-flex flex-fill" role="search">
                     <input class="form-control text-xs p-2" type="search"
                         placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
                 </form>
-
+                <!-- links -->
                 <ul class="navbar-nav ms-2">
                     <li class="nav-item d-none d-md-block">
                         <a class="nav-link" href="#"><i class="fa-solid fa-list"></i></a>
@@ -49,8 +49,8 @@
         </nav>
     </header>
 
-
     <main class="d-flex">
+        <!-- sidebar -->
         <aside class="py-4 px-4 d-flex flex-column justify-content-between">
             <div class="top d-flex flex-column justify-content-between text-md-start text-center">
                 <a href="#" class="text-white d-flex align-items-center link-underline link-underline-opacity-0 py-2">
@@ -73,11 +73,50 @@
                 </a>
             </div>
         </aside>
-
+        <!-- main content -->
         <div class="content flex-fill overflow-auto">
-            <div class="top bg-primary">
-                <div class="container-fluid">
-                    top
+            <!-- banner -->
+            <div class="top bg-primary text-white">
+                <div class="container-fluid pe-5 py-4 d-flex align-items-start justify-content-between">
+                    <div class="boolean">
+                        <div class="top">
+                            <h3 class="d-inline-block d-inline-block">Boolean</h3>
+                            <span class="fw-normal badge rounded-pill ms-1">New<span>
+                        </div>
+                        <div class="bottom d-flex align-items-center">
+                            <span class="fw-normal badge rounded-pill">3 app</span>
+                            <i class="fa-solid fa-angles-right ms-1"></i>
+                            <span class="fw-normal badge rounded-pill ms-1">Boolean mobile app</span>
+                            <span class="fw-normal badge rounded-pill ms-1">Boolean web app</span>
+                            <span class="fw-normal badge rounded-pill ms-1">Boolean blog app</span>
+                        </div>
+                    </div>
+                    <div class="students_online">
+                        Studenti online negli ultimi 30 minuti <br>
+                        <h2>125</h2>
+                    </div>
+                    <div class="new_student">
+                        Nuovo Studente
+
+                        <!-- offcanvas -->
+                        <button class="btn btn-outline-light ms-3 me-5" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
+                                class="fa-solid fa-plus"></i></button>
+
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                            aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                ...
+                            </div>
+                        </div>
+
+
+                    </div>
                 </div>
             </div>
             <div class="bottom">
