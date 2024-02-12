@@ -7,38 +7,38 @@
 
     & header {
         background-color: bisque;
-        height: 70px;
+        /* height: 70px; */
     }
 
     & main {
 
         & aside {
             background-color: var(--dash-dark);
-            width: 150px;
+            width: 250px;
         }
 
         .content {
             background-color: rgb(180, 168, 208);
-            height: calc(100vh - 70px);
+            height: calc(100vh - 57px);
             width: 100%;
 
             .top {
                 height: 125px;
             }
 
-            .bottom, .left {
-                height: calc(100vh - 195px);
-            }
-
             .bottom {
+
+                .left, .right {
+                    height: calc(100vh - 125px - 57px);
+                }
+
                 .left {
                     background-color: rgba(0, 255, 157, 0.448);
-                    /* width: 60%; */
                 }
 
                 .right {
                     background-color: rgba(0, 98, 61, 0.448);
-                    /* width: 40%; */
+                 
                 }
 
             }
