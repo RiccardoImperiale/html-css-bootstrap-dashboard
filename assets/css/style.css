@@ -1,3 +1,8 @@
+:root {
+    --dash-dark: #051e34;
+}
+
+
 .debug {
 
     & header {
@@ -6,17 +11,37 @@
     }
 
     & main {
-        display: flex;
 
         & aside {
-            background-color: rgb(29, 2, 95);
-            height: calc(100vh - 70px);
-            width: 250px;
+            background-color: var(--dash-dark);
+            width: 150px;
         }
 
-        & .content {
+        .content {
             background-color: rgb(180, 168, 208);
-            flex-grow: 1;
+            height: calc(100vh - 70px);
+            width: 100%;
+
+            .top {
+                height: 125px;
+            }
+
+            .bottom, .left {
+                height: calc(100vh - 195px);
+            }
+
+            .bottom {
+                .left {
+                    background-color: rgba(0, 255, 157, 0.448);
+                    width: 60%;
+                }
+
+                .right {
+                    background-color: rgba(0, 98, 61, 0.448);
+                    width: 40%;
+                }
+
+            }
         }
 
     }
