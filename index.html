@@ -20,34 +20,58 @@
     <header>
         <nav class="navbar navbar-expand bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="./assets/img/logo.svg" alt="logo boolean"></a>
+                <a class="navbar-brand" href="#">
+                    <img class="d-none d-md-block" src="./assets/img/logo.svg" alt="logo boolean">
+                    <img class="d-block d-md-none" src="./assets/img/logo-mobile.png" alt="logo boolean">
+                </a>
+
                 <form class="d-flex flex-fill" role="search">
-                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                    <input class="form-control text-xs p-2" type="search"
+                        placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
                 </form>
-                <div class="" id="navbarSupportedContent">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fa-solid fa-list"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fa-solid fa-circle-question"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fa-solid fa-bell"></i></a>
-                        </li>
-                    </ul>
-                </div>
+
+                <ul class="navbar-nav ms-2">
+                    <li class="nav-item d-none d-md-block">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-list"></i></a>
+                    </li>
+                    <li class="nav-item d-none d-md-block">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-circle-question"></i></a>
+                    </li>
+                    <li class="nav-item d-none d-md-block">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-bell"></i></a>
+                    </li>
+                </ul>
+
             </div>
         </nav>
     </header>
 
 
     <main class="d-flex">
-        <aside class="">
-
+        <aside class="py-4 px-4 d-flex flex-column justify-content-between">
+            <div class="top d-flex flex-column justify-content-between text-md-start text-center">
+                <a href="#" class="text-white d-flex align-items-center link-underline link-underline-opacity-0 py-2">
+                    <i style="width: 30px;" class="fa-solid fa-house"></i>
+                    <div class="d-none d-md-block me-md-5">Home</div>
+                </a>
+                <a href="#" class="text-white d-flex align-items-center link-underline link-underline-opacity-0 py-2">
+                    <i style="width: 30px;" class="fa-solid fa-chart-simple"></i>
+                    <div class="d-none d-md-block me-md-5">Stats</div>
+                </a>
+                <a href="#" class="text-white d-flex align-items-center link-underline link-underline-opacity-0 py-2">
+                    <i style="width: 30px;" class="fa-solid fa-signal"></i>
+                    <div class="d-none d-md-block me-md-5">Signals</div>
+                </a>
+            </div>
+            <div class="bottom text-md-start text-center">
+                <a href="#" class="text-white d-flex align-items-center link-underline link-underline-opacity-0 py-2">
+                    <i style="width: 30px;" class="fa-solid fa-gear"></i>
+                    <div class="d-none d-md-block me-md-5">Admin</div>
+                </a>
+            </div>
         </aside>
 
         <div class="content flex-fill overflow-auto">
@@ -59,11 +83,11 @@
             <div class="bottom">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="left col-12 col-sm-8">
+                        <div class="left col-12 col-md-8">
                             left
 
                         </div>
-                        <div class="right col-12 col-sm-4">
+                        <div class="right col-12 col-md-4">
                             right
                         </div>
                     </div>
