@@ -1,0 +1,25 @@
+.debug {
+
+    & header {
+        background-color: bisque;
+        height: 70px;
+    }
+
+    & main {
+        display: flex;
+
+        & aside {
+            background-color: rgb(29, 2, 95);
+            height: calc(100vh - 70px);
+            width: 250px;
+        }
+
+        & .content {
+            background-color: rgb(180, 168, 208);
+            flex-grow: 1;
+        }
+
+    }
+
+
+}
