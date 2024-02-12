@@ -28,8 +28,12 @@ nav {
     }
 }
 
-aside {
+main {
     height: calc(100vh - 57px);
+    overflow-y: scroll;
+}
+
+aside {
     background-color: var(--dash-dark);
     background-image: url('../img/sidebar-bg.png');
 }
@@ -60,3 +64,4 @@ aside {
         line-height: 30px;
     }
 }
+
