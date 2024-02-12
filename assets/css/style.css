@@ -5,42 +5,7 @@
     --dash-warning-code: #f26551;
 }
 
-body {
-    font-family: "Roboto", sans-serif;
-    white-space: nowrap;
-}
-
-
-.debug {
-    & main {
-        .content {
-            background-color: rgb(180, 168, 208);
-            height: calc(100vh - 57px);
-            width: 100%;
-
-            /* .top {
-                height: 125px;
-            } */
-
-            .bottom {
-
-                /* .left,
-                .right {
-                    height: calc(100vh - 125px - 57px);
-                } */
-
-                /* .left {
-                    background-color: rgba(0, 255, 157, 0.448);
-                }
-
-                .right {
-                    background-color: rgba(0, 98, 61, 0.448);
-                } */
-            }
-        }
-    }
-}
-
+/* Utilities -------------------------------------------------> */
 
 .text-xs {
     font-size: .8rem;
@@ -50,10 +15,24 @@ body {
     font-size: .9rem;
 }
 
+/* Commons -------------------------------------------------> */
+
+body {
+    font-family: "Roboto", sans-serif;
+    white-space: nowrap;
+}
+
+
 nav {
     .fa-bell {
         color: var(--dash-warning);
     }
+}
+
+aside {
+    height: calc(100vh - 57px);
+    background-color: var(--dash-dark);
+    background-image: url('../img/sidebar-bg.png');
 }
 
 .badge {
@@ -76,22 +55,8 @@ nav {
         height: 30px;
         line-height: 30px;
     }
-
-
-}
-
-thead {
-    width: 100%;
 }
 
 
-aside {
-    background-color: var(--dash-dark);
-    background-image: url('../img/sidebar-bg.png');
-}
 
-/* @media screen and (min-width: 300px) {
-    .prova {
-        display: none;
-    }
-} */
+
