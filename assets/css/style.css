@@ -64,9 +64,9 @@ aside {
 }
 
 .card {
-    & table {
+    /* & table {
         white-space: nowrap;
-    }
+    } */
 
     .fa-code {
         background-color: var(--dash-warning-code);
