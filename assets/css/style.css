@@ -64,9 +64,6 @@ aside {
 }
 
 .card {
-    /* & table {
-        white-space: nowrap;
-    } */
 
     .fa-code {
         background-color: var(--dash-warning-code);
@@ -83,4 +80,9 @@ aside {
         height: 30px;
         line-height: 30px;
     }
+}
+
+
+tr:hover td {
+    background-color: #d4d4d467;
 }
