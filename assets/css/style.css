@@ -44,7 +44,6 @@ nav {
 
 main {
     height: calc(100vh - 56px);
-    overflow-y: scroll;
 
     .content {
         scrollbar-width: thin;
