@@ -57,16 +57,11 @@ nav {
 main {
     height: calc(100vh - 56px);
 
-    .content {
-        scrollbar-width: thin;
-    }
-
     .badge {
         background-color: var(--dash-primary-dark);
     }
 
     .card {
-
         .fa-code {
             background-color: var(--dash-warning-code);
             color: white;
