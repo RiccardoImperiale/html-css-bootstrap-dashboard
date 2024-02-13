@@ -54,6 +54,10 @@ aside {
     background-color: var(--dash-dark);
     background-image: url('../img/sidebar-bg.png');
 
+    & a {
+        transition: .25s;
+    }
+
     & a:hover {
         background-color: #61616167;
     }
@@ -82,7 +86,12 @@ aside {
     }
 }
 
+table {
+    & td {
+        transition: .25s;
+    }
 
-tr:hover td {
-    background-color: #d4d4d467;
+    & tr:hover td {
+        background-color: #d4d4d467;
+    }
 }
