@@ -5,6 +5,13 @@
     --dash-warning-code: #f26551;
 }
 
+/* Commons -------------------------------------------------> */
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+
 /* Utilities -------------------------------------------------> */
 
 .text-xs {
@@ -15,27 +22,42 @@
     font-size: .9rem;
 }
 
-/* Commons -------------------------------------------------> */
-
-body {
-    font-family: "Roboto", sans-serif;
-}
-
+/* Header style -----------------------------------------> */
 
 nav {
     .fa-bell {
         color: var(--dash-warning);
+        cursor: pointer;
+    }
+
+    .dropdown-menu {
+        right: 0;
+        top: 1
+    }
+
+    .form-control {
+        background-color: #e5e5e5;
     }
 }
+
+/* Main style -----------------------------------------> */
 
 main {
     height: calc(100vh - 56px);
     overflow-y: scroll;
+
+    .content {
+        scrollbar-width: thin;
+    }
 }
 
 aside {
     background-color: var(--dash-dark);
     background-image: url('../img/sidebar-bg.png');
+
+    & a:hover {
+        background-color: #61616167;
+    }
 }
 
 .badge {
@@ -43,7 +65,6 @@ aside {
 }
 
 .card {
-
     & table {
         white-space: nowrap;
     }
@@ -63,7 +84,4 @@ aside {
         height: 30px;
         line-height: 30px;
     }
-
-
 }
-

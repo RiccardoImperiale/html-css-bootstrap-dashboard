@@ -31,8 +31,9 @@
                     <img class="d-block d-md-none" src="./assets/img/logo-mobile.png" alt="logo boolean">
                 </a>
                 <!-- input search -->
-                <form class="d-flex flex-fill" role="search">
-                    <input class="form-control text-xs p-2" type="search"
+                <form class="d-flex flex-fill position-relative align-items-center" role="search">
+                    <i class="fa-solid fa-search position-absolute text-dark ps-3"></i>
+                    <input class="form-control text-xs py-2 border border-0" style="padding-left: 2.6rem;" type="search"
                         placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
                 </form>
                 <!-- links -->
@@ -46,36 +47,46 @@
                     <li class="nav-item d-none d-md-block">
                         <a class="nav-link" href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa-solid fa-bell"></i></a>
+                    <li class="nav-item d-flex align-items-center ps-2">
+                        <div class="dropdown">
+                            <i class=" fa-solid fa-bell" data-bs-toggle="dropdown"></i>
+                            <ul style="top:18px;right:5px;" class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="#">Profilo</a></li>
+                                <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                                <li><a class="dropdown-item" href="#">Logout</a></li>
+                            </ul>
+                        </div>
                     </li>
                 </ul>
-
             </div>
         </nav>
     </header>
 
-    <main class="d-flex">
+    <main class="d-flex overflow-hidden">
         <!-- sidebar -->
-        <aside class="py-4 px-4 d-flex flex-column justify-content-between">
+        <aside class="p-4 d-flex flex-column justify-content-between">
             <div class="top d-flex flex-column justify-content-between text-md-start text-center">
-                <a href="#" class="text-white d-flex align-items-center link-underline link-underline-opacity-0 py-2">
+                <a href="#"
+                    class="px-2 text-white d-flex align-items-center link-underline link-underline-opacity-0 py-2">
                     <i style="width: 30px;" class="fa-solid fa-house"></i>
-                    <div class="d-none d-md-block me-md-5">Home</div>
+                    <div class="d-none d-md-block me-md-2">Home</div>
                 </a>
-                <a href="#" class="text-white d-flex align-items-center link-underline link-underline-opacity-0 py-2">
+                <a href="#"
+                    class="px-2 text-white d-flex align-items-center link-underline link-underline-opacity-0 py-2">
                     <i style="width: 30px;" class="fa-solid fa-chart-simple"></i>
-                    <div class="d-none d-md-block me-md-5">Stats</div>
+                    <div class="d-none d-md-block me-md-2">Stats</div>
                 </a>
-                <a href="#" class="text-white d-flex align-items-center link-underline link-underline-opacity-0 py-2">
+                <a href="#"
+                    class="px-2 text-white d-flex align-items-center link-underline link-underline-opacity-0 py-2">
                     <i style="width: 30px;" class="fa-solid fa-signal"></i>
-                    <div class="d-none d-md-block me-md-5">Signals</div>
+                    <div class="d-none d-md-block me-md-2">Signals</div>
                 </a>
             </div>
             <div class="bottom text-md-start text-center">
-                <a href="#" class="text-white d-flex align-items-center link-underline link-underline-opacity-0 py-2">
+                <a href="#"
+                    class="px-2 text-white d-flex align-items-center link-underline link-underline-opacity-0 py-2">
                     <i style="width: 30px;" class="fa-solid fa-gear"></i>
-                    <div class="d-none d-md-block me-md-5">Admin</div>
+                    <div class="d-none d-md-block me-md-2">Admin</div>
                 </a>
             </div>
         </aside>
@@ -92,7 +103,7 @@
                             data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
                                 class="fa-solid fa-plus"></i>
                         </button>
-                        <div style="width: 600px;" class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                        <div style="width: 768px;" class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
                             aria-labelledby="offcanvasRightLabel">
                             <div class="offcanvas-header">
                                 <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
@@ -103,38 +114,44 @@
                                 <!-- Form -->
                                 <form>
                                     <div class="row g-3">
+                                        <!-- Name -->
                                         <div class="col-12 col-sm-6">
                                             <label for="name" class="form-label">Nome</label>
                                             <input type="text" class="form-control" id="name"
                                                 aria-describedby="emailHelp">
                                         </div>
+                                        <!-- Surname -->
                                         <div class="col-12 col-sm-6">
                                             <label for="surname" class="form-label">Cognome</label>
                                             <input type="text" class="form-control" id="surname">
                                         </div>
+                                        <!-- Email -->
                                         <div class="col-12 col-sm-6">
                                             <label for="email" class="form-label">Email</label>
                                             <div class="input-group flex-nowrap">
                                                 <span class="input-group-text" id="addon-wrapping">@</span>
                                                 <input type="email" class="form-control" id="email" name="email"
-                                                    placeholder="Email" aria-label="email"
-                                                    aria-describedby="addon-wrapping">
+                                                    aria-label="email" aria-describedby="addon-wrapping">
                                             </div>
                                         </div>
+                                        <!-- Password -->
                                         <div class="col-12 col-sm-6">
                                             <label for="password" class="form-label">Password</label>
                                             <input type="password" class="form-control" id="password">
                                         </div>
+                                        <!-- Indirizzo -->
                                         <div class="col-12">
                                             <label for="address" class="form-label">Indirizzo</label>
                                             <input type="text" class="form-control" id="address"
                                                 aria-describedby="emailHelp">
                                         </div>
+                                        <!-- City -->
                                         <div class="col-12 col-sm-6">
                                             <label for="city" class="form-label">Città</label>
                                             <input type="text" class="form-control" id="city"
                                                 aria-describedby="emailHelp">
                                         </div>
+                                        <!-- State -->
                                         <div class="col-12 col-sm-4">
                                             <label for="state" class="form-label">Stato</label>
                                             <div class="input-group">
@@ -147,12 +164,13 @@
                                                 </select>
                                             </div>
                                         </div>
+                                        <!-- Cap -->
                                         <div class="col-12 col-sm-2">
                                             <label for="cap" class="form-label">Cap</label>
                                             <input type="text" class="form-control" id="cap"
                                                 aria-describedby="emailHelp">
                                         </div>
-
+                                        <!-- Photo -->
                                         <div class="col-12">
                                             <label for="photo" class="form-label">Foto</label>
                                             <div class="input-group">
@@ -162,10 +180,9 @@
                                         </div>
                                     </div>
 
-
                                     <div class="my-3 form-check">
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                        <label class="form-check-label" for="exampleCheck1">Seleziona per
+                                        <input type="checkbox" class="form-check-input" id="select">
+                                        <label class="form-check-label" for="select">Seleziona per
                                             proseguire</label>
                                     </div>
 
@@ -394,9 +411,8 @@
                                             </h2>
                                             <div id="flush-collapseOne" class="accordion-collapse collapse"
                                                 data-bs-parent="#accordionFlushExample">
-                                                <div class="accordion-body">Placeholder content for this accordion,
-                                                    which is intended to demonstrate the <code>.accordion-flush</code>
-                                                    class. This is the first item's accordion body.</div>
+                                                <div class="accordion-body">Clicca sul + in alto nella sezione blu.
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="accordion-item">
@@ -409,11 +425,7 @@
                                             </h2>
                                             <div id="flush-collapseTwo" class="accordion-collapse collapse"
                                                 data-bs-parent="#accordionFlushExample">
-                                                <div class="accordion-body w-100">Placeholder content for this
-                                                    accordion, which is intended to demonstrate the
-                                                    <code>.accordion-flush</code> class. This is the second item's
-                                                    accordion body. Let's imagine this being filled with some actual
-                                                    content.
+                                                <div class="accordion-body w-100">Clicca sull'icona della campanella.
                                                 </div>
                                             </div>
                                         </div>
@@ -427,12 +439,8 @@
                                             </h2>
                                             <div id="flush-collapseThree" class="accordion-collapse collapse"
                                                 data-bs-parent="#accordionFlushExample">
-                                                <div class="accordion-body">Placeholder content for this accordion,
-                                                    which is intended to demonstrate the <code>.accordion-flush</code>
-                                                    class. This is the third item's accordion body. Nothing more
-                                                    exciting happening here in terms of content, but just filling up the
-                                                    space to make it look, at least at first glance, a bit more
-                                                    representative of how this would look in a real-world application.
+                                                <div class="accordion-body">
+                                                    Certo che si.
                                                 </div>
                                             </div>
                                         </div>
@@ -442,7 +450,7 @@
                         </div>
                         <!-- right cards -->
                         <div class="right col-12 col-md-4">
-                            <!-- card -->
+                            <!-- todo card -->
                             <div class="card mt-4">
                                 <div class="card-header">
                                     <h4 class="fw-normal m-0">Todo</h4>
